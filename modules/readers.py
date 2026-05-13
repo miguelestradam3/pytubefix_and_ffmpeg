@@ -5,7 +5,6 @@ class DataClass:
     os = __import__("os")
     pandas = __import__("pandas")
     flag = False
-    yt = ""
 
     #Methods
     def __init__(self):
