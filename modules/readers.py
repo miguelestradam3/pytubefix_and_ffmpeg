@@ -8,7 +8,7 @@ class DataClass:
 
     #Methods
     def __init__(self):
-        print("The process has started...")
+        print("We are reading your file...")
     
     def save_file(self, data, path:str)->None:
         try:
@@ -24,4 +24,4 @@ class DataClass:
             print ("ERROR: {}".format(error))
 
     def __del__(self):
-        print("The process has finished...")
+        print("The reading process has finished...")

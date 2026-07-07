@@ -1,19 +1,15 @@
 class YoutubeClass:
 
-    #Attributes
-    os = __import__("os")
-    pytubefix = __import__("pytubefix")
-    flag = False
-
-    #Methods
     def __init__(self):
         print("The process has started...")
+        self.subprocess = __import__("subprocess")
+        self.os = __import__("os")
+        self.pytubefix = __import__("pytubefix")
+        self.flag = False
     
     def download_video(self, url:str)->bool:
         result = False
         try:
-            import subprocess
-            import os
 
             yt = self.pytubefix.YouTube(str(url))
 
@@ -40,9 +36,9 @@ class YoutubeClass:
                 output
             ]
 
-            subprocess.run(command)
+            self.subprocess.run(command)
 
-            os.remove(downloaded)
+            self.os.remove(downloaded)
 
             print("Done:", output)
 
