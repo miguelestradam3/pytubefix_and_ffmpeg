@@ -37,16 +37,6 @@ pandas
 
 ## 🚀 Getting Started
 
-### Clone the repository
-
-```bash
-git clone https://github.com/yourusername/youtube-downloader.git
-
-cd youtube-downloader
-```
-
----
-
 ## Install Python Dependencies
 
 ```bash
